@@ -1,0 +1,168 @@
+nav {
+  padding-top: 15px;
+  > .container {
+    @media (min-width: 992px) {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      align-items: center;
+    }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .img_nav {
+      cursor: pointer;
+      img {
+        padding-bottom: 10px;
+        max-width: 175px;
+      }
+    }
+    .nav_links {
+      @media (max-width: 991px) {
+        display: none;
+      }
+      ul {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        li {
+          position: relative;
+          font-size: 18px;
+          letter-spacing: $--spacing;
+          a {
+            color: $clr-prime0;
+            display: block;
+          }
+          &::before {
+            position: absolute;
+            content: '';
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -6px;
+            width: 0;
+            height: 2px;
+            background-color: $clr-prime2;
+            transition: $main-transition;
+            display: none;
+          }
+          &:hover {
+            &::before {
+              display: block;
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+    .nav_icons {
+      display: flex;
+      gap: 15px;
+      .bars_icon {
+        a {
+          color: $clr-prime2;
+          cursor: pointer;
+          svg {
+          }
+        }
+        @media (max-width: 991px) {
+          display: block;
+        }
+        display: none;
+      }
+      .icon {
+        @media (max-width: 991px) {
+          display: none;
+        }
+        display: flex;
+        gap: 10px;
+        color: $clr-prime1;
+        p {
+          font-size: 25px;
+        }
+      }
+    }
+  }
+}
+
+// Mopile Links Padge
+
+.links_mopile {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #fff;
+  &::after {
+  }
+  width: 100%;
+  height: 100%;
+  z-index: 99999999999;
+  padding-top: 15px;
+  transition: $main-transition;
+  transition-duration: 0.2s;
+  .close_icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    img {
+      padding-bottom: 10px;
+      max-width: 175px;
+    }
+    .close {
+      a {
+        color: $clr-prime2;
+      }
+    }
+  }
+  .links {
+    padding-left: 10px;
+    ul {
+      > li {
+        position: relative;
+        color: $clr-prime0;
+        padding: 15px 0;
+        z-index: 1;
+        transition: $main-transition;
+        &::before {
+          content: '';
+          position: absolute;
+          background-color: $clr-prime7;
+          // transition in background color had a bug
+          transition: $main-transition;
+          width: 200%;
+          left: -150px;
+          top: 0;
+          height: 100%;
+          display: none;
+          z-index: -1;
+        }
+        &:hover {
+          padding-left: 6px;
+          &::before {
+            display: block;
+          }
+        }
+        a {
+          color: $clr-prime0;
+          display: block;
+        }
+      }
+    }
+  }
+  .icons_mopile {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+
+    .icon_mopile {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      color: $clr-prime1;
+      p {
+        font-size: 25px;
+      }
+    }
+  }
+}

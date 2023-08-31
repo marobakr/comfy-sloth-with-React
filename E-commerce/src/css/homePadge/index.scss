@@ -1,0 +1,38 @@
+/* Our Helpers  */
+@import '../../helpers/variabules';
+@import '../../helpers/grid';
+@import '../../helpers/mixen';
+@import '../../helpers/globalrules';
+
+/* Home padges {...HomePadge}  */
+
+// Nav
+@import '../../components/components_Home/nav/navStyle';
+// Landingpadge
+@import '../../components/components_Home/landingpadge/landingStyle';
+// Product
+@import '../../components/components_Home/featuredproducts/product';
+// Services
+@import '../../components/components_Home/services/index';
+// Form
+@import '../../components/components_Home/form/form';
+// Footer
+@import '../../components/components_Home/footer/footer';
+// Loding
+@import '../../components/components_Home/loading/loading';
+
+/* About padge {...AboutPadge}  */
+// Alt_Headr
+@import '../../components/components_About/alt_headr/alt_headr';
+// About
+@import '../../components/components_About/about/about';
+
+/* Product Padge {...product} */
+@import '../../components/components_Product/product/product';
+
+/* Single Pasges Of Product */
+//  Modern Poster
+@import '../../components/components_Product/SignlePadges/ModerbPoster/Modern';
+
+/* cart Of padge */
+@import '../../components/Components_Cart/cart/cart';

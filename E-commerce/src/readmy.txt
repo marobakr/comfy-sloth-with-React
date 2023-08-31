@@ -1,0 +1,6 @@
+-- store => is a object and hold reducer and state
+-- action => is a javascript object and make action acrooss key and the name key is "type"
+-- the action called the reducer to chack if the reducer have a same type ? make change on state 
+-- state => is a data of my applcation
+-- reducer => is a bure function, change the state with depend on an action
+-- dispatch => is a function and to make the action talk the reducer 
