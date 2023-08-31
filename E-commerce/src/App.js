@@ -12,7 +12,7 @@ import Nav from './components/components_Home/nav'
 import Footer from './components/components_Home/footer'
 /* Start import Single Padges */
 import ModernPoster from './components/components_Product/SignlePadges/ModerbPoster/js'
-import Armchair from './components/components_Product/SignlePadges/armchair/js'
+import Armchair from './components/components_Product/SignlePadges/Armchair/js'
 import SuedeArmchair from './components/components_Product/SignlePadges/SuedeArmchair/js'
 import LeatherChair from './components/components_Product/SignlePadges/LatherChair/js'
 import EmperorBed from './components/components_Product/SignlePadges/EmperorBed/js'
